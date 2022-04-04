@@ -42,12 +42,24 @@ sudo chown -R www-data:www-data storage && sudo chown -R www-data:www-data boots
 ```bash
 cp .env.example .env
 ```
+### 5. Rode as migrates
+4.1 Instale as dependências do Laravel executando o comando
+```bash
+docker exec <CONTAINER_NAME> php artisan migrate:fresh --seed
+```
 
+Para verificar o container do php basta digitar
+
+```bash
+docker ps
+```
 ## Melhorias Futuras
 
 ~~- Colocar SEM IMAGEM caso produto não tenha imagem~~
+- Dividir responsabilidades (services/repository)
 - Pagina de Login
+- Relacionamento usuario a produto, para mostrar quem cadastrou o produto X.
 - Carrinho
 - Testes unitarios
-- Adição de Repository
 - Retirar o "Sem Imagem" de dentro do blade, criando uma validação para que quando o usuario cadastre um produto sem imagem, uma imagem default sera direcionada a este produto.
+- Paginação
