@@ -52,6 +52,7 @@ Para verificar o container do php basta digitar
 
 ```bash
 docker ps
+```
 ## Melhorias Futuras
 
 ~~- Colocar SEM IMAGEM caso produto não tenha imagem~~
