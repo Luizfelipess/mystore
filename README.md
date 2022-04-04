@@ -51,3 +51,4 @@ cp .env.example .env
 - Testes unitarios
 - Adição de Repository
 - Retirar o "Sem Imagem" de dentro do blade, criando uma validação para que quando o usuario cadastre um produto sem imagem, uma imagem default sera direcionada a este produto.
+- Paginação
