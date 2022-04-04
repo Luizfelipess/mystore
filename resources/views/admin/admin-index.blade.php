@@ -32,8 +32,12 @@
                             <tr @if ($loop->even) class="bg-gray-100" @endif>
                                 <td class="px-4 py-3">{{ $product->id }}</td>
                                 <td class="px-4 py-3">
-                                    <img alt="ecommerce" class="object-cover object-center w-full h-full block"
-                                        src="{{ \Illuminate\Support\Facades\Storage::url($product->cover) }}">
+                                    @if ($product->cover)
+                                        <img alt="product-image" class="object-cover object-center w-full h-full block"
+                                            src="{{ \Illuminate\Support\Facades\Storage::url($product->cover) }}">
+                                    @else
+                                        <img src="{{ \Illuminate\Support\Facades\Storage::url('product/image.jpeg') }}" />
+                                    @endif
                                 </td>
                                 <td class="  px-4 py-3">
                                     <a href="{{ route('product', $product->slug) }}"

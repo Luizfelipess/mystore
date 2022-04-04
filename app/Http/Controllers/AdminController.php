@@ -85,6 +85,8 @@ class AdminController extends Controller
             $file = $input['cover'];
             $path = $file->store('product');
             $input['cover'] = $path;
+        } else {
+            Storage::put('product/image.jpeg', 'Contents');
         }
 
         Product::create($input);

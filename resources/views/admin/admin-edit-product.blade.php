@@ -52,9 +52,14 @@
                         @if ($product->cover)
                             <div class="p-2 w-full">
                                 <img src="{{ \Illuminate\Support\Facades\Storage::url($product->cover) }}" alt="">
-                                <a href="{{ route('admin.product.destroyImage', $product->id) }}">
-                                    Deletar
-                                    Imagem</a>
+                                <div class="p-2 w-full">
+                                    <a href="{{ route('admin.product.destroyImage', $product->id) }}">
+
+                                        <button type="submit"
+                                            class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Deletar
+                                            Imagem</a></button>
+                                </div>
+
                             </div>
                         @endif
                         <div class="p-2 w-full">
