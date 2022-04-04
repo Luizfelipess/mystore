@@ -43,4 +43,11 @@ sudo chown -R www-data:www-data storage && sudo chown -R www-data:www-data boots
 cp .env.example .env
 ```
 
+## Melhorias Futuras
 
+~~- Colocar SEM IMAGEM caso produto não tenha imagem~~
+- Pagina de Login
+- Carrinho
+- Testes unitarios
+- Adição de Repository
+- Retirar o "Sem Imagem" de dentro do blade, criando uma validação para que quando o usuario cadastre um produto sem imagem, uma imagem default sera direcionada a este produto.
