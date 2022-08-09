@@ -12,6 +12,7 @@ Criação de CRUD Utilizando Laravel 9
 
 ```bash
 docker-compose up --build -d
+composer install
 ```
 
 
