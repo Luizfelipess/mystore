@@ -7,7 +7,7 @@
                     <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
                         src="{{ $product->cover }}">
                 @else
-                    <img src="{{ \Illuminate\Support\Facades\Storage::url('product/image.jpeg') }}" />
+                    <img src="{{ \Illuminate\Support\Facades\Storage::url('product/ySyWGI9qqEEhOy0Yv9l4EFIlcKhrWDR7vhsi0oFv.png') }}" />
                 @endif
 
                 <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">

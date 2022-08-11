@@ -36,7 +36,7 @@
                                         <img alt="product-image" class="object-cover object-center w-full h-full block"
                                             src="{{ \Illuminate\Support\Facades\Storage::url($product->cover) }}">
                                     @else
-                                        <img src="{{ \Illuminate\Support\Facades\Storage::url('product/image.jpeg') }}" />
+                                        <img src="{{ \Illuminate\Support\Facades\Storage::url('product/ySyWGI9qqEEhOy0Yv9l4EFIlcKhrWDR7vhsi0oFv.png') }}" />
                                     @endif
                                 </td>
                                 <td class="  px-4 py-3">
